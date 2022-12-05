@@ -4,15 +4,11 @@
 
   color: $color-default-white;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: transparent;
+  border: 3px solid $color-default-white;
   cursor: pointer;
 
   transition: opacity $trans-default;
-
-  &--red {
-    background-color: $color-torch-red;
-  }
 
   &:disabled {
     opacity: 0.5;
