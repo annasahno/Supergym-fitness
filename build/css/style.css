@@ -411,7 +411,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 700;
-  font-family: "Alumni Sans";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Bold.woff2") format("woff2"), url("../fonts/RobotoCondensed-Bold.woff") format("woff");
 }
@@ -419,7 +419,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 400;
-  font-family: "Alumni Sans";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Regular.woff2") format("woff2"), url("../fonts/RobotoCondensed-Regular.woff") format("woff");
 }
@@ -427,7 +427,7 @@ template {
 @font-face {
   font-style: normal;
   font-weight: 300;
-  font-family: "Alumni Sans";
+  font-family: "Roboto Condensed";
   font-display: swap;
   src: url("../fonts/RobotoCondensed-Light.woff2") format("woff2"), url("../fonts/RobotoCondensed-Light.woff") format("woff");
 }
