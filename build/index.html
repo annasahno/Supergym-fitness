@@ -5,18 +5,50 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Описание проекта">
-  <title>ProjectName</title>
+  <meta name="description" content="Фитнес центр Supergym в Омске">
+  <title>Supergym</title>
+  <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font">
+  <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/RobotoCondensed-Light.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
   <div class="wrapper">
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="container container--header">
+        <a class="header__logo">
+          <svg class="header__logo-image" role="img" aria-label="Логотип сайта." width="122" height="44">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <a class="header__phone" href="tel:+78005555555">8-800-555-55-55</a>
+      </div>
+
+      <div class="container">
+        <section class="main-screen">
+          <p class="main-screen__city">Омск</p>
+          <h1 class="main-screen__header">Фитнес центр</h1>
+          <ul class="main-screen__list">
+            <li class="main-screen__item">Тренажёрный зал</li>
+            <li class="main-screen__item">Групповые занятия</li>
+            <li class="main-screen__item">Кардио-зона</li>
+          </ul>
+          <a class="main-screen__link btn" href="#membership">Купить абонемент</a>
+          <picture>
+            <source type="image/webp" srcset="img/intro.webp 1x, img/intro@2x.webp 2x">
+            <img class="main-screen__img" src="img/intro.jpg" srcset="img/intro@2x.jpg 2x" width="500" height="566"
+              aria-hidden="true" alt="">
+          </picture>
+        </section>
+      </div>
     </header>
+
     <main>
     </main>
+
     <footer>
       <div class="container"></div>
     </footer>

@@ -1,0 +1,42 @@
+.header {
+  background: conic-gradient(from 160deg at 16.2% 39.5%, $color-dark-cerulean 8.95%, $color-venetian-red 79%, $color-dark-cerulean);
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    background: conic-gradient(from 160deg at 21% 36%, $color-dark-cerulean 6.95%, $color-venetian-red 79%, $color-dark-cerulean);
+  }
+
+  @media (max-width: $vp-767) {
+    background: conic-gradient(from 202deg at 35% 34%, $color-dark-cerulean 1.95%, $color-venetian-red 79%, $color-dark-cerulean);
+  }
+}
+
+.header__logo-image {
+  @media (max-width: $vp-1199) {
+    width: 82px;
+    height: 17px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 69px;
+    height: 24px;
+  }
+}
+
+.header__phone {
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: $color-default-white;
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+  }
+}

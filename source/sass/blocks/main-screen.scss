@@ -1,0 +1,131 @@
+.main-screen {
+  display: grid;
+  grid-template-columns: 132px 265px auto;
+  grid-template-areas: "list city img"
+    "list header img"
+    "list button img";
+  justify-items: end;
+  margin-bottom: 21px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 113px 212px auto;
+    margin-bottom: 74px;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 39% 61%;
+    grid-template-areas: "list city"
+      "list header"
+      "button button";
+    margin-bottom: 49px;
+  }
+}
+
+.main-screen__header {
+  grid-area: header;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 72px;
+    text-transform: none;
+  }
+}
+
+.main-screen__city {
+  grid-area: city;
+  margin-bottom: 0;
+  margin-top: 110px;
+  margin-right: 54px;
+  line-height: 0;
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 69px;
+    margin-bottom: 30px;
+    margin-right: 6px;
+    font-size: 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 62px;
+    margin-right: 4px;
+    font-size: 28px;
+  }
+}
+
+.main-screen__list {
+  grid-area: list;
+  margin-top: 55px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: right;
+  align-self: center;
+  grid-row: 2 / 3;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 81px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 62px;
+  }
+}
+
+.main-screen__link {
+  grid-area: button;
+  margin-top: 3px;
+  margin-bottom: 30px;
+  margin-left: 31px;
+  align-self: flex-start;
+  justify-self: stretch;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 34px;
+    margin-left: 26px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 22px;
+    margin-left: 0;
+  }
+}
+
+.main-screen__img {
+  grid-area: img;
+  position: relative;
+  top: -30px;
+  margin-left: 62px;
+  justify-self: start;
+
+  @media (max-width: $vp-1199) {
+    width: 324px;
+    height: 390px;
+    margin-left: 30px;
+    position: static;
+    object-fit: cover;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.main-screen picture {
+  grid-area: img;
+  justify-self: start;
+}
