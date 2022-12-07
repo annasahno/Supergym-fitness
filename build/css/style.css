@@ -987,8 +987,8 @@ button,
   }
 
   .main-screen {
-    -ms-grid-columns: 113px 212px auto;
-    grid-template-columns: 113px 212px auto;
+    -ms-grid-columns: 17% 31% auto;
+    grid-template-columns: 17% 31% auto;
     margin-bottom: 74px;
   }
 
@@ -1020,6 +1020,13 @@ button,
     position: static;
     -o-object-fit: cover;
     object-fit: cover;
+    -ms-grid-column-align: center;
+    justify-self: center;
+  }
+
+  .main-screen picture {
+    -ms-grid-column-align: center;
+    justify-self: center;
   }
 }
 
