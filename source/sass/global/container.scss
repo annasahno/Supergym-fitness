@@ -32,4 +32,23 @@
       align-items: flex-start;
     }
   }
+
+  &--about {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 120px;
+    padding-bottom: 10px;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 101px;
+      padding-bottom: 20px;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    @media (max-width: $vp-767) {
+      padding: 64px 0 40px;
+      text-align: left;
+    }
+  }
 }
