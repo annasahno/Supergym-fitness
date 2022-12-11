@@ -63,6 +63,21 @@
 
     @media (max-width: $vp-767) {
       padding-top: 64px;
+      padding-bottom: 36px;
+    }
+  }
+
+  &--promo {
+    padding-top: 120px;
+    display: flex;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 100px;
+    }
+
+    @media (max-width: $vp-767) {
+      display: block;
+      padding-top: 70px;
     }
   }
 }

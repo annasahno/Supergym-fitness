@@ -1,0 +1,101 @@
+.promo {
+  margin-bottom: 60px;
+}
+
+.promo__wrapper {
+  width: 43.1%;
+  display: grid;
+  grid-template-areas: "title date"
+    "title date"
+    "text text"
+    "button button";
+  padding: 81px 77px 85px 76px;
+  grid-template-rows: min-content;
+  color: $color-default-white;
+  background-color: $color-torch-red;
+
+  @media (max-width: $vp-1199) {
+    width: 43%;
+    padding: 48px 43px 50px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+  }
+}
+
+.promo h2 {
+  grid-area: title;
+  margin-left: 14px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 82px;
+  line-height: 0.96;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 3px;
+    margin-left: 10px;
+    font-size: 48px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 10px;
+  }
+}
+
+.promo__date {
+  grid-area: date;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  @media (max-width: $vp-1199) {
+    margin-right: 2px;
+  }
+}
+
+.promo p {
+  grid-area: text;
+  margin-top: 3px;
+  margin-left: 2px;
+  font-size: 18px;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 0;
+    font-size: 12px;
+  }
+}
+
+.promo a {
+  grid-area: button;
+  padding: 24px;
+  align-self: flex-end;
+  letter-spacing: 0.05em;
+
+  @media (max-width: $vp-1199) {
+    padding: 13px;
+    font-size: 10px;
+    border-width: 2px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 18px;
+  }
+}
+
+.promo__img {
+  height: 100%;
+  object-fit: cover;
+
+  @media (max-width: $vp-1199) {
+    width: 386px;
+  }
+
+  @media (max-width: $vp-767) {
+    width: 100%;
+    height: 292px;
+  }
+}

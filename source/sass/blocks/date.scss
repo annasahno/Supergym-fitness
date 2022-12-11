@@ -1,0 +1,70 @@
+.date__title {
+  margin-bottom: 4px;
+  font-size: 18px;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 0;
+    font-size: 12px;
+  }
+}
+
+.date__text {
+  margin: 0;
+  padding: 0;
+  padding-top: 4px;
+  max-width: max-content;
+  border-top: 1px solid $color-default-white;
+  font-size: 14px;
+  line-height: 1;
+
+  &--date {
+    margin-bottom: 19px;
+    display: grid;
+    grid-template-areas: "day month"
+      "day year";
+  }
+
+  @media (max-width: $vp-1199) {
+    padding-top: 2px;
+    font-size: 10px;
+
+    &--date {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.date__day {
+  grid-area: day;
+  margin-right: 6px;
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: $vp-1199) {
+    margin-right: 4px;
+    font-size: 24px;
+  }
+}
+
+.date__month {
+  grid-area: month;
+  padding-top: 4px;
+  text-transform: capitalize;
+
+  @media (max-width: $vp-1199) {
+    padding-top: 2px;
+  }
+}
+
+.date__year {
+  grid-area: year;
+}
+
+.date__time {
+  font-size: 40px;
+  font-weight: 700;
+
+  @media (max-width: $vp-1199) {
+    font-size: 24px;
+  }
+}
