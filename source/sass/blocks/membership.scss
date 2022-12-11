@@ -1,0 +1,137 @@
+.membership {
+  position: relative;
+  background-color: $color-ghost-white;
+  z-index: 1;
+}
+
+.membership h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: $ff-secondary;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  @media (max-width: $vp-1199) {
+    font-size: 42px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 32px;
+  }
+}
+
+.membership__tabs-list {
+  display: inline-block;
+  position: relative;
+  margin-top: 6px;
+  margin-bottom: 22px;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgba($color-grey, 0.2);
+  }
+
+  @media (max-width: $vp-1199) {
+    margin-top: 9px;
+    margin-bottom: 28px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 10px;
+    margin-bottom: 35px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.membership__tabs-item {
+  display: inline-block;
+}
+
+.membership__tabs-item button {
+  padding: 14px 0;
+  font-size: 20px;
+  color: $color-sapphire;
+  border: none;
+  background-color: transparent;
+  opacity: 0.5;
+  cursor: pointer;
+
+  @media (max-width: $vp-1199) {
+    font-size: 18px;
+  }
+
+  @media (max-width: $vp-767) {
+    font-size: 16px;
+  }
+}
+
+.membership__tabs-item button[data-tab="tab-2"] {
+  margin-left: 44px;
+  margin-right: 44px;
+
+  @media (max-width: $vp-1199) {
+    margin-left: 52px;
+    margin-right: 52px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.membership__tabs-item button[data-tab-active] {
+  opacity: 1;
+  border-bottom: 2px solid $color-crimson;
+}
+
+.membership__list {
+  display: none;
+  padding: 0;
+  list-style: none;
+}
+
+.membership__list[data-tab-content-active] {
+  display: grid;
+  grid-template-columns: 31% 31% 31%;
+  justify-content: space-between;
+
+  @media (max-width: $vp-1199) {
+    display: block;
+  }
+}
+
+.membership__img {
+  position: absolute;
+  height: 482px;
+  bottom: -102px;
+  right: 0;
+  object-fit: cover;
+  object-position: 183px 36px;
+  z-index: -1;
+
+  @media (max-width: $vp-1199) {
+    bottom: -70px;
+    right: -23px;
+    height: 372px;
+    object-position: 84px -40px;
+    transform: scale(0.9);
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+

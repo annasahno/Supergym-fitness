@@ -41,14 +41,28 @@
 
     @media (max-width: $vp-1199) {
       padding-top: 101px;
-      padding-bottom: 20px;
+      padding-bottom: 17px;
       flex-direction: column;
       text-align: center;
     }
 
     @media (max-width: $vp-767) {
-      padding: 64px 0 40px;
+      padding: 64px 0 70px;
       text-align: left;
+    }
+  }
+
+  &--membership {
+    padding-top: 119px;
+    padding-bottom: 104px;
+    text-align: center;
+
+    @media (max-width: $vp-1199) {
+      padding: 101px 163px 58px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 64px;
     }
   }
 }
