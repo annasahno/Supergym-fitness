@@ -1,0 +1,79 @@
+.trainers h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-family: $ff-secondary;
+  font-size: 54px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $vp-1199) {
+    margin-bottom: 9px;
+    font-size: 42px;
+    text-align: center;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-bottom: 20px;
+    font-size: 32px;
+  }
+}
+
+.trainers__swiper {
+  position: relative;
+
+  @media (max-width: $vp-1199) {
+    padding: 0 56px;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 0 32px;
+  }
+}
+
+.trainers__list {
+  max-width: 1160px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.trainers__swiper .swiper-button-prev::after,
+.trainers__swiper .swiper-button-next::after {
+  font-size: 30px;
+  color: $color-dark-gray;
+
+  @media (max-width: $vp-767) {
+    font-size: 20px;
+  }
+}
+
+.trainers__swiper .swiper-button-prev {
+  left: -62px;
+
+  @media (max-width: $vp-1199) {
+    left: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    left: -8px;
+  }
+}
+
+.trainers__swiper .swiper-button-next {
+  right: -62px;
+
+  @media (max-width: $vp-1199) {
+    right: 0;
+  }
+
+  @media (max-width: $vp-767) {
+    right: -8px;
+  }
+}
+
+.trainers__swiper .swiper-button-prev,
+.trainers__swiper .swiper-button-next {
+  &:hover::after {
+    font-size: 40px;
+    transition: font-size $trans-modal;
+  }
+}

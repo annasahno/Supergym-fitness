@@ -1,0 +1,91 @@
+
+
+.card-trainer {
+  position: relative;
+  padding: 58px 40px 20px;
+  color: $color-default-white;
+  overflow-y: auto;
+  aspect-ratio: 1 / 1.13;
+  background-color: rgba($color-sapphire, 0.89);
+
+  &:hover,
+  &:focus-within {
+    img {
+      z-index: -1;
+    }
+
+    h3 {
+      position: static;
+      transform: none;
+    }
+
+    ul {
+      display: block;
+    }
+  }
+
+  @media (max-width: $vp-1199) {
+    padding: 57px 39px 22px;
+    aspect-ratio: 1 / 1.1;
+  }
+
+  @media (max-width: $vp-767) {
+    padding: 46px 18px 22px;
+    aspect-ratio: 1 / 1.21;
+  }
+}
+
+.card-trainer h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translate(-50%, 0);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+}
+
+.card-trainer p {
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.card-trainer ul {
+  padding: 0;
+  margin-top: 32px;
+  margin-left: 31px;
+  font-size: 14px;
+  list-style: none;
+  display: none;
+
+  @media (max-width: $vp-767) {
+    margin-top: 34px;
+  }
+}
+
+.card-trainer li {
+  margin-bottom: 13px;
+  position: relative;
+
+  &::before {
+    content: "\2022";
+    position: absolute;
+    font-size: 22px;
+    top: -6px;
+    left: -16px;
+  }
+}
+
+.card-trainer img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

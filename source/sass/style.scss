@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -25,9 +25,11 @@
 @import "blocks/about.scss";
 @import "blocks/video.scss";
 @import "blocks/membership.scss";
-@import "blocks/card.scss";
+@import "blocks/card-membership.scss";
 @import "blocks/promo.scss";
 @import "blocks/date.scss";
+@import "blocks/trainers.scss";
+@import "blocks/card-trainer.scss";
 
 // ---------------------------------
 
