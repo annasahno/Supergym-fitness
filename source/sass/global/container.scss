@@ -111,4 +111,16 @@
       padding-bottom: 23px;
     }
   }
+
+  &--discount {
+    padding-top: 92px;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 50px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 34px;
+    }
+  }
 }
