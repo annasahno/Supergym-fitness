@@ -129,12 +129,13 @@
   font-weight: 700;
   line-height: 0.85;
   background-color: $color-tory-blue;
-  background-image: linear-gradient(125deg, $color-crimson, $color-tory-blue);
+  background-image: linear-gradient(145deg, $color-crimson, $color-tory-blue);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (max-width: $vp-1199) {
     font-size: 58px;
+    align-self: center;
   }
 }
 

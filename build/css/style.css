@@ -2435,8 +2435,8 @@ button,
   font-weight: 700;
   line-height: 0.85;
   background-color: #0041ca;
-  background-image: -o-linear-gradient(325deg, #d10a42, #0041ca);
-  background-image: linear-gradient(125deg, #d10a42, #0041ca);
+  background-image: -o-linear-gradient(305deg, #d10a42, #0041ca);
+  background-image: linear-gradient(145deg, #d10a42, #0041ca);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2833,6 +2833,9 @@ button,
 
   .advantages__value {
     font-size: 58px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .advantages__item:nth-child(3n) {
