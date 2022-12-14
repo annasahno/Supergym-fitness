@@ -83,10 +83,32 @@
 
   &--trainers {
     padding-top: 38px;
-    padding-bottom: 100px;
+    padding-bottom: 76px;
 
     @media (max-width: $vp-1199) {
       padding-top: 34px;
+      padding-bottom: 57px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-bottom: 55px;
+    }
+  }
+
+  &--advantages {
+    padding-top: 93px;
+    padding-bottom: 55px;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 50px;
+      padding-bottom: 93px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 33px;
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 23px;
     }
   }
 }
