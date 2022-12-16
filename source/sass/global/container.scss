@@ -107,8 +107,8 @@
     @media (max-width: $vp-767) {
       padding-top: 33px;
       padding-left: 0;
-      padding-right: 0;
       padding-bottom: 23px;
+      padding-right: 0;
     }
   }
 
@@ -126,16 +126,66 @@
 
   &--review {
     padding-top: 48px;
-    padding-bottom: 60px;
+    padding-bottom: 121px;
 
     @media (max-width: $vp-1199) {
       padding-top: 34px;
+      padding-bottom: 99px;
     }
 
     @media (max-width: $vp-767) {
       padding-top: 2px;
       padding-left: 47px;
+      padding-bottom: 71px;
       padding-right: 47px;
+    }
+  }
+
+  &--section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    @media (max-width: $vp-1199) {
+      display: block;
+      padding: 0;
+    }
+
+    @media (max-width: $vp-767) {
+      padding: 0;
+    }
+  }
+
+  &--free-lesson {
+    padding-left: 0;
+    padding-bottom: 50px;
+    padding-right: 29%;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 55px;
+      padding-left: 133px;
+      padding-bottom: 68px;
+      padding-right: 160px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 59px;
+    }
+  }
+
+  &--contacts {
+    padding-left: 21%;
+    padding-bottom: 50px;
+    padding-right: 0;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 55px;
+      padding-left: 133px;
+      padding-bottom: 43px;
+      padding-right: 104px;
+    }
+
+    @media (max-width: $vp-767) {
+      padding-top: 59px;
     }
   }
 }

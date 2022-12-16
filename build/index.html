@@ -8,6 +8,7 @@
   <meta name="description" content="Фитнес центр Supergym в Омске">
   <title>Supergym</title>
   <link rel="preload" href="fonts/AlumniSans-ExtraBold.woff2" as="font">
+  <link rel="preload" href="fonts/AlumniSans-Bold.woff2" as="font">
   <link rel="preload" href="fonts/AlumniSans-SemiBold.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Bold.woff2" as="font">
   <link rel="preload" href="fonts/RobotoCondensed-Regular.woff2" as="font">
@@ -479,32 +480,52 @@
         </div>
       </section>
 
-      <section class="contacts">
-        <div class="container">
-          <h2>Контакты</h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3>Адрес:</h3>
-              <p>г. Омск, ул. 60 лет Октября, 7</p>
-            </li>
-            <li class="contacts__item">
-              <h3>График работы:</h3>
-              <p>Пн-Вс: с 8:00 до 22:00</p>
-            </li>
-          </ul>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <h3>Телефон:</h3>
-              <a href="tel:+78005555555">8-800-555-55-55</a>
-            </li>
-            <li class="contacts__item">
-              <h3>График работы:</h3>
-              <a>Пн-Вс: с 8:00 до 22:00</p>
-                <a href="mailto:mail@htmlacademy.ru">Напишите нам</a>
-            </li>
-          </ul>
+      <div class="section-wrapper">
+        <div class="container container--section-wrapper">
+          <section class="free-lesson">
+            <div class="container container--free-lesson">
+              <h2>Бесплатное занятие</h2>
+              <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post"
+                autocomplete="off">
+                <label class="visually-hidden" for="name">Введите имя</label>
+                <input type="text" id="name" name="name" placeholder="Имя" pattern="^[А-Яа-яЁёa-zA-Z\-\s]+$"
+                  maxlength="100" title="Разрешено использовать только буквы, пробелы и дефис" required>
+                <label class="visually-hidden" for="tel">Введите номер телефона</label>
+                <input type="tel" id="tel" name="tel" placeholder="Телефон" maxlength="18" pattern="^[\s\d\-\(\)\+]+$"
+                  title="Введите цифры" required>
+                <button class="btn" type="submit">Отправить</button>
+              </form>
+            </div>
+          </section>
+
+          <section class="contacts">
+            <div class="container container--contacts">
+              <h2>Контакты</h2>
+              <div class="contacts__list-wrapper">
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h3>Адрес:</h3>
+                    <p>г. Омск, ул. 60 лет Октября, 7</p>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>График работы:</h3>
+                    <p>Пн-Вс: с 8:00 до 22:00</p>
+                  </li>
+                </ul>
+                <ul class="contacts__list">
+                  <li class="contacts__item">
+                    <h3>Телефон:</h3>
+                    <a href="tel:+78005555555">8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
     </main>
 
     <footer>
