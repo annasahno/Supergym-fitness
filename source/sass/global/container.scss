@@ -188,4 +188,22 @@
       padding-top: 59px;
     }
   }
+
+  &--footer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 26px;
+
+    @media (max-width: $vp-1199) {
+      padding-top: 42px;
+      padding-right: 37px;
+      padding-bottom: 36px;
+    }
+
+    @media (max-width: $vp-767) {
+      flex-direction: column;
+      margin-bottom: 39px;
+    }
+  }
 }

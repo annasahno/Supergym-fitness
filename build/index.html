@@ -85,7 +85,7 @@
         </div>
       </section>
 
-      <section class="membership">
+      <section class="membership" id="membership">
         <div class="container container--membership">
           <h2>Абонементы</h2>
 
@@ -217,7 +217,7 @@
         </div>
       </section>
 
-      <section class="trainers">
+      <section class="trainers" id="trainers">
         <div class="container container--trainers">
           <h2>Тренеры</h2>
           <div class="trainers__swiper-wrapper">
@@ -414,7 +414,7 @@
         </div>
       </section>
 
-      <section class="discount">
+      <section class="discount" id="discount">
         <div class="container container--discount">
           <h2>Акции</h2>
           <ul class="discount__list">
@@ -528,8 +528,64 @@
         </div>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="container container--footer">
+        <section class="footer__nav nav">
+          <h2 class="visually-hidden">Разделы сайта</h2>
+          <a class="footer__logo logo">
+            <svg class="footer__logo-image logo__image" role="img" aria-label="Логотип сайта." width="88" height="32">
+              <use xlink:href="img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <ul class="footer__list nav__list">
+            <li class="footer__item nav__item">
+              <a class="footer__link nav__link" href="#">Услуги</a>
+            </li>
+            <li class="footer__item nav__item">
+              <a class="footer__link nav__link" href="#membership">Абонементы</a>
+            </li>
+            <li class="footer__item nav__item">
+              <a class="footer__link nav__link" href="#discount">Акции</a>
+            </li>
+            <li class="footer__item nav__item">
+              <a class="footer__link nav__link" href="#trainers">Тренеры</a>
+            </li>
+            <li class="footer__item nav__item">
+              <a class="footer__link nav__link" href="#">Расписание</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="footer__social social">
+          <h2 class="visually-hidden">Наши соцсети</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--ok" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--reddit" href="#">
+                <span class="visually-hidden">Реддит</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="25" height="25">
+                  <use xlink:href="img/sprite.svg#reddit"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </footer>
   </div>
 

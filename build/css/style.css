@@ -1330,6 +1330,7 @@ html {
   line-height: 1.5;
   font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
   color: #102654;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1630,6 +1631,17 @@ button,
   padding-left: 21%;
   padding-bottom: 50px;
   padding-right: 0;
+}
+
+.container--footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 26px;
 }
 
 .btn {
@@ -2849,6 +2861,80 @@ button,
   font-size: 14px;
 }
 
+.footer {
+  background-color: #030a1a;
+  color: #ffffff;
+}
+
+.footer__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__logo {
+  margin-top: 3px;
+  margin-right: 258px;
+}
+
+.footer__social {
+  min-width: 200px;
+  margin-left: 30px;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-top: 2px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  -webkit-column-break-inside: avoid;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.nav__link {
+  margin-left: 20px;
+  margin-right: 20px;
+  color: inherit;
+  font-size: 14px;
+}
+
+.social__list {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: end;
+  list-style: none;
+}
+
+.social__item {
+  margin-left: 6px;
+}
+
+.social__link {
+  padding: 2px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.social__icon.focus-visible:focus {
+  opacity: 0.8;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -2963,6 +3049,12 @@ button,
     padding-left: 133px;
     padding-bottom: 43px;
     padding-right: 104px;
+  }
+
+  .container--footer {
+    padding-top: 42px;
+    padding-right: 37px;
+    padding-bottom: 36px;
   }
 
   .header {
@@ -3344,6 +3436,29 @@ button,
   .contacts__item a {
     font-size: 18px;
   }
+
+  .footer__logo {
+    margin-right: 47px;
+  }
+
+  .footer__logo svg {
+    width: 82px;
+    height: 18px;
+  }
+
+  .footer__social {
+    min-width: 110px;
+    margin-left: 20px;
+  }
+
+  .nav__link {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+
+  .social__item {
+    margin-left: 7px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -3406,6 +3521,14 @@ button,
 
   .container--contacts {
     padding-top: 59px;
+  }
+
+  .container--footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-bottom: 39px;
   }
 
   .modal__wrapper {
@@ -3825,6 +3948,66 @@ button,
     display: inline-block;
     margin-bottom: 21px;
   }
+
+  .footer__nav {
+    display: block;
+    margin-bottom: 14px;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    -webkit-column-gap: 32px;
+    -moz-column-gap: 32px;
+    column-gap: 32px;
+  }
+
+  .footer__logo {
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+
+  .footer__logo svg {
+    width: 68px;
+    height: 15px;
+  }
+
+  .footer__social {
+    position: relative;
+    left: -4px;
+    margin-left: 0;
+  }
+
+  .nav__list {
+    display: block;
+  }
+
+  .nav__item {
+    margin-bottom: 16px;
+  }
+
+  .nav__link {
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 16px;
+  }
+
+  .social__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+
+  .social__item {
+    margin-left: 0;
+  }
+
+  .social__link {
+    padding: 5px;
+  }
+
+  .social__link svg {
+    width: 25px;
+  }
 }
 
 @media (hover: hover) {
@@ -3838,5 +4021,9 @@ button,
     -webkit-transition: width 0.3s ease, height 0.3s ease;
     -o-transition: width 0.3s ease, height 0.3s ease;
     transition: width 0.3s ease, height 0.3s ease;
+  }
+
+  .social__icon:hover:not(.focus-visible) {
+    opacity: 0.8;
   }
 }
