@@ -11,6 +11,10 @@
   }
 }
 
+.header__logo {
+  margin-right: 20px;
+}
+
 .header__logo-image {
   @media (max-width: $vp-1199) {
     width: 82px;
@@ -30,6 +34,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: $color-default-white;
+  z-index: 1;
 
   @media (max-width: $vp-1199) {
     font-size: 24px;

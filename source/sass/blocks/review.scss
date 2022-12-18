@@ -121,3 +121,14 @@
     right: -36px;
   }
 }
+
+.no-js .review__list {
+  display: grid;
+  gap: 10px;
+}
+
+.no-js .review__button-prev,
+.no-js .review__button-next {
+  display: none;
+}
+

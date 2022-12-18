@@ -7,19 +7,19 @@
 }
 
 .promo__wrapper {
-  width: 43.1%;
   display: grid;
+  grid-template-columns: minmax(min-content, 255px) min-content;
   grid-template-areas: "title date"
     "title date"
     "text text"
     "button button";
   padding: 81px 77px 85px 76px;
-  grid-template-rows: min-content;
   color: $color-default-white;
   background-color: $color-torch-red;
+  z-index: 1;
 
   @media (max-width: $vp-1199) {
-    width: 43%;
+    grid-template-columns: minmax(min-content, 295px) min-content;
     padding: 48px 43px 50px;
   }
 
@@ -30,9 +30,10 @@
 
 .promo h2 {
   grid-area: title;
-  margin-left: 14px;
   margin-top: 5px;
+  margin-left: 14px;
   margin-bottom: 0;
+  margin-right: 10px;
   font-family: $ff-secondary;
   font-weight: 600;
   font-size: 82px;
@@ -63,12 +64,11 @@
 
 .promo p {
   grid-area: text;
-  margin-top: 3px;
+  margin-top: 0;
   margin-left: 2px;
   font-size: 18px;
 
   @media (max-width: $vp-1199) {
-    margin-top: 0;
     font-size: 12px;
   }
 }

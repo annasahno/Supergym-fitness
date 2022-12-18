@@ -9,7 +9,7 @@
 
   @media (max-width: $vp-1199) {
     grid-template-columns: 17% 31% auto;
-    margin-bottom: 74px;
+    margin-bottom: 76px;
   }
 
   @media (max-width: $vp-767) {
@@ -23,7 +23,7 @@
 
 .main-screen__header {
   grid-area: header;
-  margin-top: 0;
+  margin-top: -13px;
   margin-bottom: 0;
   font-family: $ff-secondary;
   font-weight: 600;
@@ -43,9 +43,9 @@
 .main-screen__city {
   grid-area: city;
   margin-bottom: 0;
-  margin-top: 110px;
+  margin-top: 96px;
   margin-right: 54px;
-  line-height: 0;
+  line-height: 0.6;
   font-family: $ff-secondary;
   font-weight: 600;
   font-size: 48px;
@@ -53,14 +53,14 @@
   letter-spacing: 0.03em;
 
   @media (max-width: $vp-1199) {
-    margin-top: 69px;
+    margin-top: 60px;
     margin-bottom: 30px;
     margin-right: 6px;
     font-size: 34px;
   }
 
   @media (max-width: $vp-767) {
-    margin-top: 62px;
+    margin-top: 58px;
     margin-right: 4px;
     font-size: 28px;
   }
@@ -68,7 +68,7 @@
 
 .main-screen__list {
   grid-area: list;
-  margin-top: 55px;
+  margin-top: 44px;
   padding: 0;
   list-style: none;
   font-size: 14px;
@@ -78,11 +78,11 @@
   grid-row: 2 / 3;
 
   @media (max-width: $vp-1199) {
-    margin-top: 81px;
+    margin-top: 70px;
   }
 
   @media (max-width: $vp-767) {
-    margin-top: 62px;
+    margin-top: 50px;
   }
 }
 

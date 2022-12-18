@@ -1,4 +1,5 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {removeNoJsClass} from './utils/remove-no-js-class.js';
 import {initModals} from './modules/modals/init-modals';
 import {findVideos} from './modules/video.js';
 import {toggleTabs} from './modules/tabs.js';
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  removeNoJsClass();
 
   // Modules
   // ---------------------------------

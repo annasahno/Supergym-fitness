@@ -25,6 +25,7 @@
 
 .membership__tabs-list {
   display: inline-block;
+  vertical-align: middle;
   position: relative;
   margin-top: 6px;
   margin-bottom: 22px;
@@ -57,6 +58,7 @@
 
 .membership__tabs-item {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .membership__tabs-item button {
@@ -106,6 +108,7 @@
 .membership__list[data-tab-content-active] {
   display: grid;
   grid-template-columns: 31% 31% 31%;
+  row-gap: 10px;
   justify-content: space-between;
 
   @media (max-width: $vp-1199) {
@@ -134,4 +137,3 @@
     display: none;
   }
 }
-

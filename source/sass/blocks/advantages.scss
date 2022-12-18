@@ -129,7 +129,7 @@
   line-height: 0.85;
   background-color: $color-tory-blue;
   background-image: linear-gradient(145deg, $color-crimson, $color-tory-blue);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 
   @media (max-width: $vp-1199) {
@@ -142,7 +142,7 @@
   font-size: 14px;
 }
 
-.advantages__item:nth-child(3n) {
+.advantages__item--main {
   grid-column: 2;
   grid-row: 1 / 3;
   display: block;
@@ -175,7 +175,7 @@
   }
 }
 
-.advantages__item:nth-child(3n) .advantages__value-wrapper {
+.advantages__item--main .advantages__value-wrapper {
   display: block;
   margin-right: 0;
   margin-bottom: 35px;
@@ -190,7 +190,7 @@
   }
 }
 
-.advantages__item:nth-child(3n) .advantages__value {
+.advantages__item--main .advantages__value {
   margin-right: 8px;
   font-size: 74px;
   font-weight: 700;
@@ -207,7 +207,7 @@
   }
 }
 
-.advantages__item:nth-child(3n) .advantages__unit {
+.advantages__item--main .advantages__unit {
   font-size: 26px;
 
   @media (max-width: $vp-1199) {

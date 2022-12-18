@@ -7,7 +7,6 @@ const swiperTrainers = new Swiper('.trainers__swiper', {
     prevEl: '.trainers__button-prev',
   },
 
-  initialSlide: 0,
   loop: true,
 
   breakpoints: {
@@ -17,10 +16,12 @@ const swiperTrainers = new Swiper('.trainers__swiper', {
     768: {
       slidesPerView: 2,
       spaceBetween: 30,
+      initialSlide: 2,
     },
     1200: {
       slidesPerView: 4,
       spaceBetween: 40,
+      initialSlide: 0,
     },
   },
 });

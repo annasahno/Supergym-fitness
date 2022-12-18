@@ -9,15 +9,17 @@ function setupVideo(video) {
   let buttonElement = video.querySelector('.video__button');
   let link = linkElement.href;
 
-  linkElement.removeAttribute('href');
+  if (linkElement & buttonElement & link) {
+    linkElement.removeAttribute('href');
 
-  buttonElement.addEventListener('click', () => {
-    let iframe = createIframe(link);
+    buttonElement.addEventListener('click', () => {
+      let iframe = createIframe(link);
 
-    linkElement.remove();
-    buttonElement.remove();
-    video.appendChild(iframe);
-  });
+      linkElement.remove();
+      buttonElement.remove();
+      video.appendChild(iframe);
+    });
+  }
 }
 
 function createIframe(link) {

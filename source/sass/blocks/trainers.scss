@@ -18,7 +18,7 @@
   }
 }
 
-.trainers__swiper {
+.trainers__swiper-wrapper {
   position: relative;
 
   @media (max-width: $vp-1199) {
@@ -36,8 +36,8 @@
   padding: 0;
 }
 
-.trainers__swiper .swiper-button-prev::after,
-.trainers__swiper .swiper-button-next::after {
+.trainers__button-prev::after,
+.trainers__button-next::after {
   font-size: 30px;
   color: $color-dark-gray;
 
@@ -46,7 +46,7 @@
   }
 }
 
-.trainers__swiper .swiper-button-prev {
+.trainers__button-prev {
   left: -62px;
 
   @media (max-width: $vp-1199) {
@@ -58,7 +58,7 @@
   }
 }
 
-.trainers__swiper .swiper-button-next {
+.trainers__button-next {
   right: -62px;
 
   @media (max-width: $vp-1199) {
@@ -70,10 +70,29 @@
   }
 }
 
-.trainers__swiper .swiper-button-prev,
-.trainers__swiper .swiper-button-next {
+.trainers__button-prev,
+.trainers__button-next {
   &:hover::after {
     font-size: 40px;
     transition: font-size $trans-modal;
   }
+}
+
+.no-js .trainers__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+
+  @media (max-width: $vp-1199) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: $vp-767) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.no-js .trainers__button-prev,
+.no-js .trainers__button-next {
+  display: none;
 }
