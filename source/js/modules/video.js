@@ -7,9 +7,10 @@ const findVideos = () => {
 function setupVideo(video) {
   let linkElement = video.querySelector('.video__link');
   let buttonElement = video.querySelector('.video__button');
-  let link = linkElement.href;
 
-  if (linkElement & buttonElement & link) {
+  if (linkElement && buttonElement) {
+    let link = linkElement.href;
+
     linkElement.removeAttribute('href');
 
     buttonElement.addEventListener('click', () => {

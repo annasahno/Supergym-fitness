@@ -79,6 +79,10 @@
 .contacts__item a {
   font-size: 14px;
 
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
   @media (max-width: $vp-1199) {
     font-size: 18px;
   }

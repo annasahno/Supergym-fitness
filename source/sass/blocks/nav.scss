@@ -26,6 +26,10 @@
   color: inherit;
   font-size: 14px;
 
+  @include hover-focus {
+    opacity: 0.8;
+  }
+
   @media (max-width: $vp-1199) {
     margin-left: 15px;
     margin-right: 15px;

@@ -122,6 +122,14 @@
   }
 }
 
+.review__button-prev,
+.review__button-next {
+  &:hover::after {
+    font-size: 40px;
+    transition: font-size $trans-modal;
+  }
+}
+
 .no-js .review__list {
   display: grid;
   gap: 10px;
@@ -131,4 +139,3 @@
 .no-js .review__button-next {
   display: none;
 }
-
