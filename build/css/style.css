@@ -1569,6 +1569,9 @@ button,
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding-top: 30px;
   padding-bottom: 0;
 }
