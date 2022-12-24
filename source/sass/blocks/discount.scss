@@ -164,16 +164,25 @@
   }
 }
 
+.discount__item--main .discount__img-wrapper {
+  overflow: hidden;
+}
+
 .discount__item--main img {
   object-fit: cover;
   width: 100%;
+  aspect-ratio: 1 / 1.65;
+  object-position: -19px -6px;
+  transform: scale(1.04);
 
   @media (max-width: $vp-1199) {
     aspect-ratio: 1 / 1.16;
-    object-position: top center;
+    transform: scale(1);
+    object-position: 0 -20px;
   }
 
   @media (max-width: $vp-767) {
-    aspect-ratio: 1 / 1.03;
+    aspect-ratio: 1 / 1.04;
+    object-position: 0 -16px;
   }
 }

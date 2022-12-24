@@ -2215,6 +2215,9 @@ button,
   grid-template-columns: minmax(min-content, 255px) min-content;
   grid-template-areas: "title date" "title date" "text text" "button button";
   padding: 81px 77px 85px 76px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   color: #ffffff;
   background-color: #ed0233;
   z-index: 1;
@@ -2263,6 +2266,10 @@ button,
   padding: 24px;
   align-self: flex-end;
   letter-spacing: 0.05em;
+}
+
+.promo__img-wrapper {
+  overflow: hidden;
 }
 
 .promo__img {
@@ -2707,10 +2714,20 @@ button,
   border-bottom-color: #ffffff;
 }
 
+.discount__item--main .discount__img-wrapper {
+  overflow: hidden;
+}
+
 .discount__item--main img {
   -o-object-fit: cover;
   object-fit: cover;
   width: 100%;
+  aspect-ratio: 1/1.65;
+  -o-object-position: -19px -6px;
+  object-position: -19px -6px;
+  -webkit-transform: scale(1.04);
+  -ms-transform: scale(1.04);
+  transform: scale(1.04);
 }
 
 .review {
@@ -3449,8 +3466,11 @@ button,
 
   .discount__item--main img {
     aspect-ratio: 1/1.16;
-    -o-object-position: top center;
-    object-position: top center;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -o-object-position: 0 -20px;
+    object-position: 0 -20px;
   }
 
   .review h2 {
@@ -3796,7 +3816,12 @@ button,
 
   .promo__img {
     width: 100%;
-    height: 292px;
+    -o-object-position: -44px 17px;
+    object-position: -44px 17px;
+    -webkit-transform: scale(1.14);
+    -ms-transform: scale(1.14);
+    transform: scale(1.14);
+    aspect-ratio: 1/1;
   }
 
   .trainers h2 {
@@ -3929,7 +3954,9 @@ button,
   }
 
   .discount__item--main img {
-    aspect-ratio: 1/1.03;
+    aspect-ratio: 1/1.04;
+    -o-object-position: 0 -16px;
+    object-position: 0 -16px;
   }
 
   .review h2 {
