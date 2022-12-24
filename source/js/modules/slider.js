@@ -1,6 +1,10 @@
 import '../vendor/swiper.js';
 
 const swiperTrainers = new Swiper('.trainers__swiper', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   navigation: {
     nextEl: '.trainers__button-next',
@@ -27,12 +31,17 @@ const swiperTrainers = new Swiper('.trainers__swiper', {
 });
 
 const swiperReview = new Swiper('.review__swiper', {
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 
   navigation: {
     nextEl: '.review__button-next',
     prevEl: '.review__button-prev',
   },
 
+  autoHeight: true,
   initialSlide: 0,
   slidesPerView: 1,
 });
