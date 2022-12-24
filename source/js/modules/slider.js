@@ -1,5 +1,7 @@
 import '../vendor/swiper.js';
 
+document.querySelectorAll('.swiper-slide').forEach((slide) => slide.setAttribute('tabindex', 0));
+
 const swiperTrainers = new Swiper('.trainers__swiper', {
   keyboard: {
     enabled: true,
