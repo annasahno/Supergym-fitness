@@ -37,6 +37,7 @@
 .discount__item {
   display: flex;
   flex-direction: column;
+  min-height: 211px;
   padding: 18px 28px 28px;
   border-width: 7px;
   border-style: solid;
@@ -171,6 +172,7 @@
 .discount__item--main img {
   object-fit: cover;
   width: 100%;
+  height: 100%;
   aspect-ratio: 1 / 1.65;
   object-position: -19px -6px;
   transform: scale(1.04);

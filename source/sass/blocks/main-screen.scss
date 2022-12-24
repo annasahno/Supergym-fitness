@@ -107,6 +107,7 @@
 
 .main-screen__img {
   grid-area: img;
+  width: 81%;
   position: relative;
   top: -30px;
   margin-left: 62px;
@@ -115,7 +116,7 @@
   @media (max-width: $vp-1199) {
     width: 324px;
     height: 390px;
-    margin-left: 30px;
+    margin-left: 14px;
     position: static;
     object-fit: cover;
     justify-self: center;
@@ -129,8 +130,10 @@
 .main-screen picture {
   grid-area: img;
   justify-self: start;
+  width: 81%;
 
   @media (max-width: $vp-1199) {
     justify-self: center;
+    width: 324px;
   }
 }
