@@ -2382,7 +2382,6 @@ button,
   position: relative;
   padding: 58px 40px 20px;
   color: #ffffff;
-  overflow-y: auto;
   aspect-ratio: 1/1.13;
   background-color: rgba(16, 38, 84, 0.89);
 }
@@ -2403,6 +2402,11 @@ button,
 .card-trainer:hover ul,
 .card-trainer:focus-within ul {
   display: block;
+}
+
+.card-trainer__text {
+  overflow-y: auto;
+  height: 100%;
 }
 
 .card-trainer h3 {

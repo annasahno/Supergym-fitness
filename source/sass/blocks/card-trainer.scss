@@ -4,7 +4,6 @@
   position: relative;
   padding: 58px 40px 20px;
   color: $color-default-white;
-  overflow-y: auto;
   aspect-ratio: 1 / 1.13;
   background-color: rgba($color-sapphire, 0.89);
 
@@ -33,6 +32,11 @@
     padding: 46px 18px 22px;
     aspect-ratio: 1 / 1.21;
   }
+}
+
+.card-trainer__text {
+  overflow-y: auto;
+  height: 100%;
 }
 
 .card-trainer h3 {
