@@ -12,6 +12,7 @@
 }
 
 .header__logo {
+  grid-area: logo;
   margin-right: auto;
 
   @media (max-width: $vp-1199) {
@@ -36,7 +37,9 @@
 }
 
 .header__contacts-wrapper {
-  max-width: 17%;
+  grid-area: contact;
+  grid-row: 1 / 4;
+  margin-left: 10px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -44,9 +47,11 @@
   text-align: right;
 
   @media (max-width: $vp-1199) {
-    max-width: 80%;
+    max-width: none;
+    margin-bottom: 8px;
     flex-direction: row;
     justify-content: flex-end;
+    grid-row: 1;
   }
 }
 
@@ -68,5 +73,119 @@
 
   @media (max-width: $vp-767) {
     font-size: 20px;
+  }
+}
+
+
+.header__title {
+  grid-area: header;
+  margin: 0;
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 92px;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-align: right;
+  text-transform: uppercase;
+  -webkit-text-stroke: 4px;
+
+  @media (max-width: $vp-1199) {
+    font-size: 72px;
+    text-transform: none;
+  }
+}
+
+.header__city {
+  grid-area: city;
+  margin-bottom: 27px;
+  margin-top: 98px;
+  margin-right: 52px;
+  line-height: 0.6;
+  font-family: $ff-secondary;
+  font-weight: 600;
+  font-size: 48px;
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    margin-right: 6px;
+    font-size: 34px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 59px;
+    margin-bottom: 22px;
+    margin-right: 4px;
+    font-size: 28px;
+  }
+}
+
+.header__list {
+  grid-area: list;
+  margin-top: 100px;
+  padding: 0;
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: right;
+  align-self: center;
+  grid-row: 3 / 4;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 78px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 60px;
+  }
+}
+
+.header__link {
+  grid-area: button;
+  margin-top: 46px;
+  margin-bottom: 30px;
+  margin-left: 31px;
+  align-self: flex-start;
+  justify-self: stretch;
+
+  @media (max-width: $vp-1199) {
+    margin-top: 34px;
+    margin-left: 26px;
+  }
+
+  @media (max-width: $vp-767) {
+    margin-top: 22px;
+    margin-left: 0;
+  }
+}
+
+.header__img {
+  grid-area: img;
+  position: relative;
+  top: 20px;
+  justify-self: center;
+
+  @media (max-width: $vp-1199) {
+    width: 324px;
+    height: 390px;
+    margin-left: 14px;
+    position: static;
+    object-fit: cover;
+    justify-self: center;
+  }
+
+  @media (max-width: $vp-767) {
+    display: none;
+  }
+}
+
+.header picture {
+  grid-area: img;
+
+  @media (max-width: $vp-1199) {
+    justify-self: center;
+    width: 324px;
   }
 }

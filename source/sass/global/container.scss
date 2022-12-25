@@ -16,22 +16,34 @@
   }
 
   &--header {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 132px 265px 48.5% auto;
+    grid-template-areas: "logo logo img contact"
+      "list city img contact"
+      "list header img contact"
+      "list button img contact";
+    justify-items: end;
     padding-top: 30px;
-    padding-bottom: 0;
+    padding-bottom: 64px;
 
     @media (max-width: $vp-1199) {
-      margin-bottom: 5px;
-      padding-top: 36px;
+      grid-template-columns: 17% 31% auto;
+      grid-template-areas: "logo contact contact"
+        "list city img"
+        "list header img"
+        "list button img";
+      padding-top: 35px;
+      padding-bottom: 73px;
     }
 
     @media (max-width: $vp-767) {
-      margin-bottom: 20px;
-      padding-top: 15px;
-      align-items: flex-start;
+      grid-template-columns: 39% 61%;
+      grid-template-areas: "logo contact"
+        "list city"
+        "list header"
+        "button button";
+      padding-top: 16px;
+      padding-bottom: 48px;
     }
   }
 
